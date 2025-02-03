@@ -1,0 +1,101 @@
+body {
+  background-color: #8ab96b;
+  font-family: "Albert Sans", sans-serif;
+  margin: 32px;
+}
+
+#contacto {
+  padding: 32px;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(255, 254, 250, 0.9);
+  border-radius: 8px;
+}
+
+#formasContacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#formasContacto div {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: #e8769a;
+}
+
+h3 {
+  font-size: 16px;
+}
+#formulario {
+  padding: 24px;
+  margin: auto;
+  background-color: rgba(255, 254, 250, 0.9);
+  border-radius: 8px;
+  margin-top: 32px;
+  height: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#formularioText {
+  display: flex;
+  gap: 10px;
+  height: 80px;
+}
+
+#formularioText div {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+#formularioText label,
+#formularioArea label {
+  margin-bottom: 5px;
+}
+
+#formularioText input,
+#mensaje {
+  padding: 5px;
+  border: 2px solid #f4a64c;
+  border-radius: 32px;
+  width: 100%;
+}
+
+#formularioArea {
+  display: flex;
+  flex-direction: column;
+}
+
+#mensaje {
+  height: 100px;
+}
+
+button {
+  align-self: flex-end;
+  padding: 5px 10px;
+  border: 3px solid #f4a64c;
+  background-color: #f4a64c;
+  border-radius: 80px;
+  width: 160px;
+  height: 40px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e8769a;
+}
+
+input {
+  background-color: rgba(244, 166, 76, 0.2);
+}
