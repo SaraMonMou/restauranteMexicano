@@ -4,12 +4,28 @@ body {
   margin: 32px;
 }
 
-#contacto {
+#contacto,
+#formulario {
   padding: 32px;
   margin: auto;
   text-align: center;
   background-color: rgba(255, 254, 250, 0.9);
   border-radius: 8px;
+}
+
+#formulario {
+  padding: 24px;
+  margin-top: 32px;
+  height: 300px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #e8769a;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 #formasContacto {
@@ -21,23 +37,6 @@ body {
 
 #formasContacto div {
   text-align: center;
-}
-
-h1 {
-  font-size: 40px;
-  color: #e8769a;
-}
-
-h3 {
-  font-size: 16px;
-}
-#formulario {
-  padding: 24px;
-  margin: auto;
-  background-color: rgba(255, 254, 250, 0.9);
-  border-radius: 8px;
-  margin-top: 32px;
-  height: 300px;
 }
 
 form {
@@ -58,22 +57,22 @@ form {
   width: 48%;
 }
 
-#formularioText label,
-#formularioArea label {
+#formularioArea {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
   margin-bottom: 5px;
 }
 
-#formularioText input,
+input,
 #mensaje {
   padding: 5px;
   border: 2px solid #f4a64c;
   border-radius: 32px;
   width: 100%;
-}
-
-#formularioArea {
-  display: flex;
-  flex-direction: column;
+  background-color: rgba(244, 166, 76, 0.2);
 }
 
 #mensaje {
@@ -90,12 +89,9 @@ button {
   height: 40px;
   cursor: pointer;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #e8769a;
-}
-
-input {
-  background-color: rgba(244, 166, 76, 0.2);
 }
