@@ -5,7 +5,8 @@ body {
 }
 
 #contacto,
-#formulario {
+#formulario,
+#ubicacion {
   padding: 32px;
   margin: auto;
   text-align: center;
@@ -59,7 +60,8 @@ form {
 
 #formularioArea {
   display: flex;
-  flex-direction: column;
+  gap: 10px;
+  height: 80px;
 }
 
 label {
@@ -79,6 +81,12 @@ input,
   height: 100px;
 }
 
+#boton {
+  display: flex;
+  justify-content: end;
+  margin-top: 32px;
+}
+
 button {
   align-self: flex-end;
   padding: 5px 10px;
@@ -89,9 +97,19 @@ button {
   height: 40px;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 
 button:hover {
   background-color: #e8769a;
+}
+
+#ubicacion {
+  margin-top: 32px;
+  background-color: rgba(255, 254, 250, 0.5);
+}
+
+#ubicacion img {
+  width: 100%;
+  object-fit: cover;
 }
