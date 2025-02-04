@@ -10,17 +10,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgba(138, 185, 107, 0.5);
+  font-family: "Albert Sans", sans-serif;
 }
 
-header, footer {
-    background-color: #f0f0f0;
-    padding: 10px;
-    text-align: right;
-}
-
-header img, footer img {
-    vertical-align: middle;
-}
 
 nav {
     display: flex;
@@ -34,19 +27,33 @@ nav button {
 }
 
 .container {
+    background-color: rgba(250, 227, 82, 0.9)    ;
+    margin: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
+    border-radius: 8px;
 }
 
 .form-container, .calendar-container {
-    border: 1px solid #ccc;
+    border: 1px solid #e8769a;
+    background-color: rgba(160, 220, 218, 0.9);
+    border-radius: 8px;
     padding: 20px;
 }
 
-.form-container input, .form-container select, .form-container button {
-    margin: 10px 0;
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.form-container input, .form-container select, .form-container button, .cta-buttons button {
+    padding: 5px;
+    border: 2px solid #f4a64c;
+    border-radius: 32px;
     width: 100%;
 }
 
@@ -72,3 +79,12 @@ nav button {
     margin-bottom: 50px;
     width: auto;
 }
+
+input, select, button {
+    background-color: rgba(255, 254, 250, 0.9);
+    font-weight: bold;
+  }
+
+  button:hover {
+    background-color: #e8769a;
+  }
