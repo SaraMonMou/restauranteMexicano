@@ -51,7 +51,7 @@ nav button {
 }
 
 .form-container input, .form-container select, .form-container button, .cta-buttons button {
-    padding: 5px;
+    padding: 16px;
     border: 2px solid #f4a64c;
     border-radius: 32px;
     width: 100%;
@@ -73,11 +73,11 @@ nav button {
 }
 
 #reservaButton{
-    display: flex;
-    justify-content: center;
-    justify-self: center;
+    align-self: center;
     margin-bottom: 50px;
-    width: auto;
+    width: fit-content ;
+    margin-right: 8px;
+    margin-left: 8px;
 }
 
 input, select, button {
@@ -88,3 +88,5 @@ input, select, button {
   button:hover {
     background-color: #e8769a;
   }
+
+
