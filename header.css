@@ -1,0 +1,108 @@
+:root {
+    --main-bg-color: brown;
+    --n-isabelline: #EFE6E6;
+    --n-alabaster: #F0EDE4;
+    --n-bone: #EEE3D3;
+    --n-jet: #33322E;
+    --n-raisinblack: #252323;
+    --p-eng-violet: #573F5C;
+    --p-af-violet: #A583B2;
+    --p-fandango: #BC0E8E;
+    --p-mint: #6CCCA2;
+    --p-mindaro: #E4E97B;
+    --font-title: 'Courier New', Courier, monospace;
+    --font-body: 'Arial', sans-serif;
+    --font-size-title-computer: 32px;
+    --font-size-title-mob: 26px;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--n-isabelline);
+    color: var(--n-jet);
+    line-height: 1.6;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: var(--n-alabaster);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-top {
+    background-color: var(--p-af-violet);
+    padding: 0.5em 0;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+  
+  .contact-info a {
+    margin: 0;
+    font-size: 14px;
+    color: var(--n-alabaster);
+    text-decoration: none;
+  }
+  
+  .contact-info i {
+    margin-right: 0.5em;
+  }
+  
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    width: 10em;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.05);
+  }
+  
+  .main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .main-menu li {
+    margin: 0 10px;
+  }
+  
+  .main-menu li:hover {
+    margin: 0 10px;
+    transform: translateY(-5px);
+  
+  }
+  
+  .main-menu a {
+    text-decoration: none;
+    color: var(--n-jet);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: var(--p-mint);
+  }
+  
+  .main-menu a:hover {
+    color: var(--n-alabaster);
+  }
+  
+  
