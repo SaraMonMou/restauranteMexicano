@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reserva.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reserva.css" />
     <title>Reserva</title>
-</head>
-<body>
-    <body>
+  </head>
+  <body>
     <div class="container">
-        <div class="calendar-container">    
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FMadrid&showTitle=0&showPrint=0&hl=es&showTz=0" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      <div class="calendar-container">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FMadrid&showTitle=0&showPrint=0&hl=es&showTz=0"
+          style="border: solid 1px #777"
+          width="800"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+      <div class="form-container">
+        <h1>Quieres hacer una reserva?</h1>
+        <h3>Rellena el siguiente formulario</h3>
+        <div class="input-row">
+          <input type="text" placeholder="Personas" />
+          <input type="text" placeholder="Horas" />
         </div>
-        <div class="form-container">
-            <h2>Quieres hacer una reserva?</h2>
-            <p>Rellena el siguiente formulario</p>
-            <div class="input-row">
-                <input type="text" placeholder="Personas">
-                <input type="text" placeholder="Horas">
-            </div>
-            <select>
-                <option>ComboBox</option>
-            </select>
-            <button id="reservaButton">Reservar</button>
-            <p>No encuentras disponibilidad?</p>
-            <div class="cta-buttons">
-                <button>Apuntate a la lista de espera</button>
-                <button>Contactanos</button>
-            </div>
+        <select>
+          <option>ComboBox</option>
+        </select>
+        <button id="reservaButton">Reservar</button>
+        <h3>No encuentras disponibilidad?</h3>
+        <div class="cta-buttons">
+          <button>Apúntate a la lista de espera</button>
+          <button>Contactanos</button>
         </div>
+      </div>
     </div>
-</body>
-</body>
+  </body>
 </html>
