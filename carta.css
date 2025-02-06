@@ -1,34 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+:root {
+    --c-colorPrincipalBlanco: #FFFEFB;
+    --c-colorPrinicpalNegro: #272523;
+    --c-colorAmarillo: #FAE352;
+    --c-colorNaranja: #F4A64C;
+    --c-colorAguacate: #8AB96B;
+    --c-colorRosa: #E8769A;
+    --c-colorAzulito: #A0DCDA;
+    --fontTitulo: "Albert Sans", serif;
+    --fontSubtitulo: "Solway", serif;
+    --fontTexto: "Sofia Sans Semi Condensed", serif;
+}
+
 html, body {
     height: 100%;
     width: 100%;
+    background-color: var(--c-colorAzulito);
 }
 
 .contenido_carta {
-    
 }
 
 .seccion_carta {
-    
+    margin-right: 6vw;
+    margin-left: 6vw;
+    margin-bottom: 1.5vw;
+    padding-top: 0.1vw;
+    padding-bottom: 0.1vw;
+    background-color: var(--c-colorNaranja);
 }
 
 .titulo_seccion {
     text-align: center;
-
+    background-color: var(--c-colorNaranja);
 }
 
 .platos {
     border: 1px solid black;
-    
+    background-color: var(--c-colorAmarillo);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 0.5em;
+    gap: 0.8em;
     padding: 0.8em;
     margin: 1em;
 }
 
 .plato {
-    background-color: green;
+    background-color: var(--c-colorPrincipalBlanco);
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
     padding: 1em;
 }
 
