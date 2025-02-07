@@ -15,13 +15,14 @@
 }
 
 html, body {
-    background-color: var(--c-colorAzulito);
+    background-color: color-mix(in srgb, var(--c-colorAguacate) 50%, transparent);
 }
 
 .contenido_carta {
 }
 
 .seccion_carta {
+    border-radius: 1em;
     margin-right: 6vw;
     margin-left: 6vw;
     margin-bottom: 1.5vw;
@@ -33,11 +34,11 @@ html, body {
 .titulo_seccion {
     text-align: center;
     background-color: var(--c-colorNaranja);
-    font-family: var(--fontTitulo);
+    font-family: var(--fontSubtitulo);
 }
-
+/* 
 .platos {
-    border: 1px solid black;
+    border-radius: 1em;
     background-color: var(--c-colorAmarillo);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -45,12 +46,34 @@ html, body {
     gap: 0.8em;
     padding: 0.8em;
     margin: 1em;
+} */
+
+.platos {
+    border-radius: 1em;
+    background-color: var(--c-colorAmarillo);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in fullscreen */
+    grid-template-rows: repeat(2, auto); /* 2 rows in fullscreen */
+    gap: 0.8em;
+    padding: 0.8em;
+    margin: 1em;
 }
+
+/* Media query for smaller screens */
+@media (max-width: 1200px) {
+    .platos {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        grid-template-rows: repeat(auto, 1fr); /* Rows adjust automatically */
+    }
+}
+
+
 
 .plato {
     background-color: var(--c-colorPrincipalBlanco);
     box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.5);
     padding: 1em;
+    border-radius: 1em;
 }
 
 .titulo_imagen_plato {
@@ -65,16 +88,17 @@ html, body {
 
 .titulo_plato {
     margin-left: 0, auto;
-    font-family: var(--fontSubtitulo);
+    font-family: var(--fontTitulo);
 }
 
 .precio {
     text-align: end;
     font-size: 2em;
-    font-family: var(--fontSubtitulo);
+    font-family: var(--fontTitulo);
 }
 
 .descripcion {
     text-align: center;
     font-family: var(--fontTexto);
 }
+
