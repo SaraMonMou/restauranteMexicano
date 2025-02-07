@@ -15,8 +15,6 @@
 }
 
 html, body {
-    height: 100%;
-    width: 100%;
     background-color: var(--c-colorAzulito);
 }
 
@@ -35,6 +33,7 @@ html, body {
 .titulo_seccion {
     text-align: center;
     background-color: var(--c-colorNaranja);
+    font-family: var(--fontTitulo);
 }
 
 .platos {
@@ -55,16 +54,27 @@ html, body {
 }
 
 .titulo_imagen_plato {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.2em;
+    display: flex !important;
+    flex-wrap: inherit;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
 }
 
 .titulo_plato {
-    
+    margin-left: 0, auto;
+    font-family: var(--fontSubtitulo);
 }
 
 .precio {
     text-align: end;
     font-size: 2em;
+    font-family: var(--fontSubtitulo);
+}
+
+.descripcion {
+    text-align: center;
+    font-family: var(--fontTexto);
 }
