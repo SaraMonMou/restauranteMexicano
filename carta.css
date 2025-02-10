@@ -14,7 +14,11 @@
     --fontTexto: "Sofia Sans Semi Condensed", serif;
 }
 
-html, body {
+html {
+    
+}
+
+body {
     background-color: color-mix(in srgb, var(--c-colorAguacate) 50%, transparent);
 }
 
