@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Load and insert header
     fetch('header.html')
         .then(response => response.text())
         .then(html => {
@@ -7,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error loading header:', error));
 
-    // Load and insert footer
     fetch('footer.html')
         .then(response => response.text())
         .then(html => {
