@@ -1,19 +1,18 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 :root {
-  --c-colorPrincipalBlanco: #FFFEFB;
+  --c-colorPrincipalBlanco: #fffefb;
   --c-colorPrinicpalNegro: #272523;
-  --c-colorAmarillo: #FAE352;
-  --c-colorNaranja: #F4A64C;
-  --c-colorAguacate: #8AB96B;
-  --c-colorRosa: #E8769A;
-  --c-colorAzulito: #A0DCDA;
-  --fontTitulo: "Albert Sans", serif;
-  --fontSubtitulo: "Solway", serif;
-  --fontTexto: "Sofia Sans Semi Condensed", serif;
+  --c-colorAmarillo: #fae352;
+  --c-colorNaranja: #f4a64c;
+  --c-colorAguacate: #8ab96b;
+  --c-colorRosa: #e8769a;
+  --c-colorAzulito: #a0dcda;
+  --fontTitulo: 'Albert Sans', serif;
+  --fontSubtitulo: 'Solway', serif;
+  --fontTexto: 'Sofia Sans Semi Condensed', serif;
 }
 
 header {
@@ -22,7 +21,7 @@ header {
   top: 0;
   z-index: 1000;
   width: 100%;
-  background-color: var(--c-colorAguacate);
+  background-color: color-mix(in srgb, var(--c-colorAmarillo) 50%, transparent);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -34,7 +33,7 @@ header {
 .contact-info {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 1em;
 }
@@ -82,7 +81,6 @@ header {
 .main-menu li:hover {
   margin: 0 10px;
   transform: translateY(-5px);
-
 }
 
 .main-menu a {
@@ -97,4 +95,3 @@ header {
 .main-menu a:hover {
   color: var(--c-colorPrinicpalNegro);
 }
-
