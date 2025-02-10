@@ -15,8 +15,13 @@
   --fontTexto: 'Sofia Sans Semi Condensed', serif;
 }
 
+
+body {
+  margin: 0;
+}
+
 footer {
-  background-color: color-mix(in srgb, var(--c-colorAmarillo) 50%, transparent);
+  background-color: rgb(252, 241, 168);
   color: var(--c-colorPrinicpalNegro);
   padding: 2em 0;
   font-family: var(--fontTitulo);
@@ -46,6 +51,7 @@ footer {
 .footer-logo p,
 a {
   text-decoration: none;
+  color: var(--c-colorPrinicpalNegro);
 }
 
 .footer-contact-info a {
@@ -107,4 +113,8 @@ hr {
 .footer-contact-info img {
   width: auto !important;
   height: auto !important;
+}
+
+.footer-content a:hover{
+  text-decoration: underline;
 }
