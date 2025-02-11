@@ -1,13 +1,66 @@
-main {
-    margin-bottom: 1em;
+@import "variablesGlobales.css";
+
+body {
+    background-color: color-mix(in srgb, var(--c-colorAguacate) 50%, transparent) !important;
 }
 
-.card-img-top {
-    height: 250px;
-    object-fit: cover;
+.card-text-overlay {
+    font-family: var(--fontSubtitulo);
 }
 
 .card:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease;
+}
+
+/* Container for card images */
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image styling */
+.card-img-top {
+    height: 25vh;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* Black overlay (initially hidden) */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Text overlay */
+.card-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover effect on card */
+.card:hover .card-img-top {
+    opacity: 0.5; /* Optional fade effect on image */
+}
+
+.card:hover .card-overlay {
+    opacity: 1; /* Fade in the black overlay */
+}
+
+.card:hover .card-text-overlay {
+    opacity: 1; /* Show the text overlay */
 }

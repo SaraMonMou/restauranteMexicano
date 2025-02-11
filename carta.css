@@ -1,14 +1,7 @@
 @import "variablesGlobales.css";
 
-html {
-
-}
-
 body {
     background-color: color-mix(in srgb, var(--c-colorAguacate) 50%, transparent);
-}
-
-.contenido_carta {
 }
 
 .seccion_carta {
