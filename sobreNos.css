@@ -393,11 +393,11 @@ body {
       background-color:  rgba(244, 166, 76);
     }
   
-    ul li:nth-child(3) div::before {
+    ul li:nth-child(3) div::before:not(.main-menu) {
       background-color:  rgba(138, 185, 107);
     }
   
-    ul li:nth-child(4) div::before {
+    ul li:nth-child(4) div::before:not(.main-menu) {
       background-color:  rgba(232, 118, 154, 0.9);
     }
   
