@@ -15,7 +15,7 @@
   --fontTexto: 'Sofia Sans Semi Condensed', serif;
 }
 
-body{
+body {
   margin: 0;
 }
 
@@ -101,6 +101,20 @@ header {
   background-color: #e8769a;
 }
 
-.phone:hover{
+.phone:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+  .main-menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5em;
+    margin-left: 1em;
+  }
+
+  .main-menu li {
+    white-space: nowrap;
+  }
 }

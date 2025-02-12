@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --c-colorPrincipalBlanco: #fffefb;
+  --c-colorPrinicpalNegro: #272523;
+  --c-colorAmarillo: #fae352;
+  --c-colorAmarilloSuave: rgb(252 241 168);
+  --c-colorNaranja: #f4a64c;
+  --c-colorAguacate: #8ab96b;
+  --c-colorRosa: #e8769a;
+  --c-colorAzulito: #a0dcda;
+  --fontTitulo: 'Albert Sans', serif;
+  --fontSubtitulo: 'Solway', serif;
+  --fontTexto: 'Sofia Sans Semi Condensed', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fontTitulo);
+}
+
+p,
+a {
+  font-family: var(--fontTexto);
+}
+
+body:not(footer):not(.footer-content) {
+  background: #fff;
+  color: #000000;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 75vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+.slide:first-child {
+  background: url('/imaxes/slider/fotoslider1.jpg') no-repeat center
+    center/cover;
+}
+
+.slide:nth-child(2) {
+  background: url('/imaxes/slider/fotoslider2.jpg') no-repeat center
+    center/cover;
+}
+
+.slide:nth-child(3) {
+  background: url('/imaxes/slider/fotoslider3.jpg') no-repeat center
+    center/cover;
+}
+
+.row {
+  height: 5vh;
+}
+
+.bloquegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.columnaIzquierda,
+.columnaDerecha {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 30vh;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.columnaIzquierda img,
+.columnaDerecha img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.acordeon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.acordeon-item {
+  width: 100%;
+}
+
+.acordeon-boton {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--c-colorAguacate);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.acordeon-boton::after {
+  content: '+';
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.acordeon-boton.activo::after {
+  transform: rotate(45deg);
+}
+
+.acordeon-contenido {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: white;
+  padding: 0 1rem;
+}
+
+.acordeon-contenido.activo {
+  max-height: 200px;
+  padding: 1rem;
+}
+
+.carta {
+  display: flex !important;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btncarta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--c-colorAguacate);
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.btncarta:hover {
+  background: var(--c-colorAguacate);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.btncarta:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.bloque-contacto {
+  position: relative;
+  height: 300px;
+  background-image: url('imaxes/index/piepagina.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bloque-contacto::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.texto-contacto {
+  max-width: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.texto-contacto h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.texto-contacto p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.boton-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--c-colorAguacate);
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+
+.boton-contacto:hover {
+  background: var(--c-colorAguacate);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.boton-contacto:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1200px) {
+  .bloque-contacto {
+    width: 95%;
+  }
+}

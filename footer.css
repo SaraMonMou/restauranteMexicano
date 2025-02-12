@@ -15,7 +15,6 @@
   --fontTexto: 'Sofia Sans Semi Condensed', serif;
 }
 
-
 body {
   margin: 0;
 }
@@ -25,6 +24,7 @@ footer {
   color: var(--c-colorPrinicpalNegro);
   padding: 2em 0;
   font-family: var(--fontTitulo);
+  width: 100%;
 }
 
 .footer-content {
@@ -45,7 +45,16 @@ footer {
 .footer-logo img {
   width: 6em;
   height: auto;
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
+}
+
+@media screen and (max-width: 768px) {
+  .footer-contact-info img {
+    display: none;
+  }
+  .footer-contact-info p {
+    margin-bottom: 1em;
+  }
 }
 
 .footer-logo p,
@@ -115,6 +124,6 @@ hr {
   height: auto !important;
 }
 
-.footer-content a:hover{
+.footer-content a:hover {
   text-decoration: underline;
 }
