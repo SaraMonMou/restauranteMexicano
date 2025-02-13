@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const linkElement = document.createElement('link');
+    linkElement.rel = 'icon';
+    linkElement.type = 'image/x-icon';
+    linkElement.href = 'logos/logoVersionResumida/resumidoFondoAmarelo.png';
+
+    document.head.appendChild(linkElement);
+
     fetch('header.html')
         .then(response => response.text())
         .then(html => {
