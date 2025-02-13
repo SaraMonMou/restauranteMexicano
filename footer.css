@@ -28,6 +28,13 @@ footer {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  footer{
+    font-size: 14px;
+  }
+}
+
+
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -46,7 +53,6 @@ footer {
 .footer-logo img {
   width: 6em;
   height: auto;
-  /*margin-bottom: 1em;*/
 }
 
 @media screen and (max-width: 768px) {
