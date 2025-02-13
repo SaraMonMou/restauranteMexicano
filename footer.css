@@ -127,3 +127,28 @@ hr {
 .footer-content a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .footer-content {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px;
+  }
+
+  .footer-logo {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-contact-info p{
+    margin-top: 1em;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+}
