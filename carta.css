@@ -4,6 +4,10 @@ body {
     background-color: color-mix(in srgb, var(--c-colorAguacate) 50%, transparent);
 }
 
+.contenido_carta {
+    margin-top: 2em;
+}
+
 .seccion_carta {
     border-radius: 1em;
     margin-right: 6vw;
