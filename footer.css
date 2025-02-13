@@ -20,6 +20,7 @@ body {
 }
 
 footer {
+  font-size: 16px;
   background-color: rgb(252, 241, 168);
   color: var(--c-colorPrinicpalNegro);
   padding: 2em 0;
