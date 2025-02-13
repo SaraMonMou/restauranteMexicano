@@ -3,6 +3,7 @@
 
 
 body {
+    width: 99%;
     background-color: color-mix(in srgb, var(--c-colorAguacate) 50%, transparent) !important;
 }
 
