@@ -16,32 +16,28 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Container for card images */
 .card {
     position: relative;
     overflow: hidden;
 }
 
-/* Image styling */
 .card-img-top {
     height: 25vh;
     object-fit: cover;
     transition: opacity 0.3s ease;
 }
 
-/* Black overlay (initially hidden) */
 .card-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-/* Text overlay */
 .card-text-overlay {
     position: absolute;
     top: 50%;
@@ -55,15 +51,14 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* Hover effect on card */
 .card:hover .card-img-top {
-    opacity: 0.5; /* Optional fade effect on image */
+    opacity: 0.5;
 }
 
 .card:hover .card-overlay {
-    opacity: 1; /* Fade in the black overlay */
+    opacity: 1;
 }
 
 .card:hover .card-text-overlay {
-    opacity: 1; /* Show the text overlay */
+    opacity: 1;
 }

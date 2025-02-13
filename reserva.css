@@ -63,6 +63,7 @@ nav button {
 	gap: 10px;
 	justify-content: space-around;
 }
+
 .cta-buttons button {
 	display: flex;
 	width: auto;

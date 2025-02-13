@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const linkElement = document.createElement('link');
     linkElement.rel = 'icon';
     linkElement.type = 'image/x-icon';

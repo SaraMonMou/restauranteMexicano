@@ -128,18 +128,15 @@ body:not(footer):not(.footer-content) {
 }
 
 .slide:first-child {
-  background: url('/imaxes/slider/fotoslider1.jpg') no-repeat center
-    center/cover;
+  background: url('/imaxes/slider/fotoslider1.jpg') no-repeat center center/cover;
 }
 
 .slide:nth-child(2) {
-  background: url('/imaxes/slider/fotoslider2.jpg') no-repeat center
-    center/cover;
+  background: url('/imaxes/slider/fotoslider2.jpg') no-repeat center center/cover;
 }
 
 .slide:nth-child(3) {
-  background: url('/imaxes/slider/fotoslider3.jpg') no-repeat center
-    center/cover;
+  background: url('/imaxes/slider/fotoslider3.jpg') no-repeat center center/cover;
 }
 
 .row {
@@ -281,6 +278,7 @@ body:not(footer):not(.footer-content) {
   border-radius: 10px;
   overflow: hidden;
 }
+
 @media (max-width: 768px) {
   .bloque-contacto {
     padding: 0 20px;
@@ -359,30 +357,31 @@ body:not(footer):not(.footer-content) {
 
 .acordeon-contenido.activo {
 
-  overflow-y: auto; 
+  overflow-y: auto;
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .bloquegrid {
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto auto; 
-    gap: 0; 
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
   }
-  .columnaDerecha, .columnaIzquierda {
+
+  .columnaDerecha,
+  .columnaIzquierda {
     margin-top: 0;
   }
 
   .bloquegrid.textofoto .columnaIzquierda {
-    order: 2; 
+    order: 2;
   }
 
   .bloquegrid.textofoto .columnaDerecha {
-    order: 1; 
+    order: 1;
   }
 
   .bloquegrid.textofoto .columnaIzquierda .btncarta {
     width: auto;
   }
 }
-
