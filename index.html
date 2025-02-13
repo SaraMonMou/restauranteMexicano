@@ -1,169 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Full Screen Slider</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <script
-      src="https://static.elfsight.com/platform/platform.js"
-      async
-    ></script>
-  </head>
 
-  <body>
-    
-    <script src="include.js"></script>
-    
-    <div class="slider">
-      <div class="slide current">
-        <div class="content">
-          <h1>Sabores Auténticos</h1>
-          <p>
-            Descubre la esencia de la cocina mexicana con nuestros platillos
-            preparados con ingredientes frescos y recetas tradicionales. Desde
-            tacos hasta moles artesanales, cada bocado es una explosión de
-            sabor.
-          </p>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="content">
-          <h1>Un Rincón de México</h1>
-          <p>
-            Sumérgete en un ambiente cálido y lleno de colores que reflejan la
-            alegría y el folclore de México. Nuestro restaurante es el lugar
-            perfecto para disfrutar de una experiencia auténtica con amigos y
-            familiares.
-          </p>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="content">
-          <h1>Pasión por la Cocina</h1>
-          <p>
-            Cada platillo es elaborado con dedicación por nuestros talentosos
-            chefs, quienes ponen el alma en cada preparación. Ven y disfruta de
-            una experiencia gastronómica que rinde homenaje a la tradición
-            culinaria de México.
-          </p>
-        </div>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Full Screen Slider</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+</head>
 
-    <div class="buttons">
-      <button id="prev"><i class="fas fa-arrow-left"></i></button>
-      <button id="next"><i class="fas fa-arrow-right"></i></button>
-    </div>
+<body>
 
-    <div class="row"></div>
+  <script src="include.js"></script>
 
-    <div class="bloquegrid">
-      <div class="columnaIzquierda">
-        <img
-          src="imaxes/index/nuestrorestaurante.jpg"
-          alt="Restaurante Mexicano"
-        />
-      </div>
-      <div class="columnaDerecha">
-        <div class="acordeon">
-          <div class="acordeon-item">
-            <button class="acordeon-boton">Nuestra Historia</button>
-            <div class="acordeon-contenido">
-              <p>
-                Desde 1995, nuestro restaurante ha sido un punto de encuentro
-                para los amantes de la auténtica cocina mexicana. Fundado con la
-                visión de compartir los sabores más representativos de México,
-                nos hemos convertido en un referente gastronómico en el corazón
-                de la ciudad. Con el paso de los años, hemos mantenido nuestra
-                esencia, fusionando tradición y creatividad para ofrecer
-                platillos que evocan la calidez y el espíritu de nuestra
-                cultura.
-              </p>
-            </div>
-          </div>
-
-          <div class="acordeon-item">
-            <button class="acordeon-boton">Cocina Tradicional</button>
-            <div class="acordeon-contenido">
-              <p>
-                En nuestra cocina, la tradición es lo más importante. Utilizamos
-                ingredientes frescos y cuidadosamente seleccionados para
-                preservar la autenticidad de cada platillo. Desde tortillas
-                hechas a mano hasta salsas preparadas con recetas que han pasado
-                de generación en generación, cada bocado cuenta una historia.
-                Nuestra misión es brindar una experiencia gastronómica genuina,
-                donde los sabores, aromas y texturas transporten a nuestros
-                comensales directamente a las cocinas mexicanas de antaño.
-              </p>
-            </div>
-          </div>
-
-          <div class="acordeon-item">
-            <button class="acordeon-boton">Ambiente y Servicio</button>
-            <div class="acordeon-contenido">
-              <p>
-                Más que un restaurante, somos un espacio donde la hospitalidad
-                mexicana se vive en cada detalle. Desde la decoración inspirada
-                en el folclore de nuestro país hasta la cálida atención de
-                nuestro equipo, buscamos crear un ambiente acogedor y familiar.
-                Ya sea que nos visites para una cena romántica, una reunión con
-                amigos o una celebración especial, te garantizamos un servicio
-                personalizado y una experiencia inolvidable llena de sabores y
-                momentos únicos.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row"></div>
-    <div class="bloquegrid textofoto">
-      <div class="columnaIzquierda carta">
-        <h2>Nuestra Carta</h2>
+  <div class="slider">
+    <div class="slide current">
+      <div class="content">
+        <h1>Sabores Auténticos</h1>
         <p>
-          Explora nuestra deliciosa carta, donde encontrarás una amplia variedad
-          de platillos tradicionales mexicanos, desde tacos y enchiladas hasta
-          guacamole fresco y margaritas clásicas. ¡Tenemos algo para todos los
-          gustos!
+          Descubre la esencia de la cocina mexicana con nuestros platillos
+          preparados con ingredientes frescos y recetas tradicionales. Desde
+          tacos hasta moles artesanales, cada bocado es una explosión de
+          sabor.
         </p>
-        <br />
-        <a type="button" class="btncarta" href="carta.html">Ver Carta</a>
-      </div>
-      <div class="columnaDerecha">
-        <img src="imaxes/index/fotocarta.jpg" alt="Carta del Restaurante" />
       </div>
     </div>
-    <div class="row"></div>
-
-    <div
-      class="elfsight-app-79453133-2523-41ea-8f27-d2aa3d23c91e"
-      data-elfsight-app-lazy
-    ></div>
-
-    <div class="row"></div>
-
-    <div class="bloque-contacto">
-      <div class="texto-contacto">
-        <h2>¿Tienes dudas?</h2>
-        <p>Contáctanos, estamos aquí para ayudarte.</p>
+    <div class="slide">
+      <div class="content">
+        <h1>Un Rincón de México</h1>
+        <p>
+          Sumérgete en un ambiente cálido y lleno de colores que reflejan la
+          alegría y el folclore de México. Nuestro restaurante es el lugar
+          perfecto para disfrutar de una experiencia auténtica con amigos y
+          familiares.
+        </p>
       </div>
-      <a href="contacto.html" class="boton-contacto" href="contacto.html"
-        >Ir a Contacto</a
-      >
     </div>
+    <div class="slide">
+      <div class="content">
+        <h1>Pasión por la Cocina</h1>
+        <p>
+          Cada platillo es elaborado con dedicación por nuestros talentosos
+          chefs, quienes ponen el alma en cada preparación. Ven y disfruta de
+          una experiencia gastronómica que rinde homenaje a la tradición
+          culinaria de México.
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <div class="row"></div>
+  <div class="buttons">
+    <button id="prev"><i class="fas fa-arrow-left"></i></button>
+    <button id="next"><i class="fas fa-arrow-right"></i></button>
+  </div>
 
-    <script src="index.js"></script>
-  </body>
+  <div class="row"></div>
+
+  <div class="bloquegrid">
+    <div class="columnaIzquierda">
+      <img src="imaxes/index/nuestrorestaurante.jpg" alt="Restaurante Mexicano" />
+    </div>
+    <div class="columnaDerecha">
+      <div class="acordeon">
+        <div class="acordeon-item">
+          <button class="acordeon-boton">Nuestra Historia</button>
+          <div class="acordeon-contenido">
+            <p>
+              Desde 1995, nuestro restaurante ha sido un punto de encuentro
+              para los amantes de la auténtica cocina mexicana. Fundado con la
+              visión de compartir los sabores más representativos de México,
+              nos hemos convertido en un referente gastronómico en el corazón
+              de la ciudad. Con el paso de los años, hemos mantenido nuestra
+              esencia, fusionando tradición y creatividad para ofrecer
+              platillos que evocan la calidez y el espíritu de nuestra
+              cultura.
+            </p>
+          </div>
+        </div>
+
+        <div class="acordeon-item">
+          <button class="acordeon-boton">Cocina Tradicional</button>
+          <div class="acordeon-contenido">
+            <p>
+              En nuestra cocina, la tradición es lo más importante. Utilizamos
+              ingredientes frescos y cuidadosamente seleccionados para
+              preservar la autenticidad de cada platillo. Desde tortillas
+              hechas a mano hasta salsas preparadas con recetas que han pasado
+              de generación en generación, cada bocado cuenta una historia.
+              Nuestra misión es brindar una experiencia gastronómica genuina,
+              donde los sabores, aromas y texturas transporten a nuestros
+              comensales directamente a las cocinas mexicanas de antaño.
+            </p>
+          </div>
+        </div>
+
+        <div class="acordeon-item">
+          <button class="acordeon-boton">Ambiente y Servicio</button>
+          <div class="acordeon-contenido">
+            <p>
+              Más que un restaurante, somos un espacio donde la hospitalidad
+              mexicana se vive en cada detalle. Desde la decoración inspirada
+              en el folclore de nuestro país hasta la cálida atención de
+              nuestro equipo, buscamos crear un ambiente acogedor y familiar.
+              Ya sea que nos visites para una cena romántica, una reunión con
+              amigos o una celebración especial, te garantizamos un servicio
+              personalizado y una experiencia inolvidable llena de sabores y
+              momentos únicos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"></div>
+  <div class="bloquegrid textofoto">
+    <div class="columnaIzquierda carta">
+      <h2>Nuestra Carta</h2>
+      <p>
+        Explora nuestra deliciosa carta, donde encontrarás una amplia variedad
+        de platillos tradicionales mexicanos, desde tacos y enchiladas hasta
+        guacamole fresco y margaritas clásicas. ¡Tenemos algo para todos los
+        gustos!
+      </p>
+      <br />
+      <a type="button" class="btncarta" href="carta.html">Ver Carta</a>
+    </div>
+    <div class="columnaDerecha">
+      <img src="imaxes/index/fotocarta.jpg" alt="Carta del Restaurante" />
+    </div>
+  </div>
+  <div class="row"></div>
+
+  <div class="elfsight-app-79453133-2523-41ea-8f27-d2aa3d23c91e" data-elfsight-app-lazy></div>
+
+  <div class="row"></div>
+
+  <div class="bloque-contacto">
+    <div class="texto-contacto">
+      <h2>¿Tienes dudas?</h2>
+      <p>Contáctanos, estamos aquí para ayudarte.</p>
+    </div>
+    <a href="contacto.html" class="boton-contacto" href="contacto.html">Ir a Contacto</a>
+  </div>
+
+  <div class="row"></div>
+
+  <script src="index.js"></script>
+</body>
+
 </html>

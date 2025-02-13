@@ -174,6 +174,7 @@ h1 {
 #fecha1 {
 	background-color: rgba(250, 227, 82);
 }
+
 #fecha1::before {
 	background: rgba(250, 227, 82, 0.8);
 }
@@ -182,6 +183,7 @@ h1 {
 #fecha2 {
 	background-color: rgba(244, 166, 76);
 }
+
 #fecha2::before {
 	background: rgba(244, 166, 76, 0.8);
 }
@@ -190,6 +192,7 @@ h1 {
 #fecha3 {
 	background-color: rgba(138, 185, 107);
 }
+
 #fecha3::before {
 	background: rgba(138, 185, 107, 0.8);
 }
@@ -198,6 +201,7 @@ h1 {
 #fecha4 {
 	background-color: rgba(232, 118, 154);
 }
+
 #fecha4::before {
 	background: rgba(232, 118, 154, 0.8);
 }
@@ -207,6 +211,7 @@ h1 {
 #fecha5 {
 	background-color: rgba(160, 220, 218);
 }
+
 #fecha5::before {
 	background: rgba(160, 220, 218, 0.8);
 }
@@ -265,6 +270,7 @@ h1 {
 	padding-inline: 1.5rem;
 	background-color: (255, 254, 250, 0.9);
 }
+
 #lineaVertical li .title {
 	font-weight: bold;
 	overflow: hidden;
@@ -272,6 +278,7 @@ h1 {
 	padding-block-end: 1rem;
 	font-weight: 500;
 }
+
 #lineaVertical li .descr {
 	padding-block-end: 1.5rem;
 	font-weight: 300;
@@ -291,6 +298,7 @@ h1 {
 	filter: blur(4px);
 	transform: translate(-50%, 50%);
 }
+
 #lineaVertical li .title::before {
 	bottom: calc(100% + 0.125rem);
 }
@@ -304,12 +312,15 @@ h1 {
 	#lineaVertical {
 		grid-template-columns: 1fr var(--line-w) 1fr;
 	}
+
 	#lineaVertical::before {
 		grid-column: 2;
 	}
+
 	#lineaVertical li:nth-child(odd) {
 		grid-column: 1;
 	}
+
 	#lineaVertical li:nth-child(even) {
 		grid-column: 3;
 	}
@@ -328,6 +339,7 @@ h1 {
 		transform: translate(-50%, -50%);
 		left: calc(100% + var(--col-gap) + var(--line-w) / 2);
 	}
+
 	#lineaVertical li:nth-child(odd) .date {
 		border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
 	}
