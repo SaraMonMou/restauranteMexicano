@@ -20,6 +20,7 @@ body {
 }
 
 header {
+  font-size: 16px;
   font-family: var(--fontTitulo);
   position: sticky;
   top: 0;
@@ -28,6 +29,13 @@ header {
   background-color: rgb(252, 241, 168);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 767px) {
+  header{
+    font-size: 14px;
+  }
+}
+
 
 .header-top {
   background-color: var(--c-colorNaranja);
