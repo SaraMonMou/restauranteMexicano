@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const linkElement = document.createElement('link');
     linkElement.rel = 'icon';
     linkElement.type = 'image/x-icon';
-    linkElement.href = 'logos/logoVersionResumida/resumidoFondoAmarelo.png';
+    linkElement.href = 'logos/favicon/favicon.png';
 
     document.head.appendChild(linkElement);
 
