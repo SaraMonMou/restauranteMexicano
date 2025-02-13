@@ -122,7 +122,127 @@ button:hover {
   background-color: rgba(255, 254, 250, 0.5);
 }
 
-#ubicacion img {
+#ubicacion iframe {
   width: 100%;
-  object-fit: cover;
+  height: 35em;
+  border: 0;
+}
+
+@media (max-width: 1200px) {
+  #formasContacto {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #formasContacto div {
+    margin-bottom: 20px;
+  }
+
+  #formularioText {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #formularioText div {
+    width: 100%;
+  }
+
+  #formularioArea {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #formularioArea label {
+    margin-bottom: 10px;
+  }
+
+  #boton {
+    justify-content: center;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  #formulario {
+    height: auto;
+    padding: 16px;
+  }
+
+  #formularioText {
+    gap: 15px;
+  }
+
+  input,
+  #mensaje {
+    padding: 10px;
+  }
+
+  #boton button {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  #ubicacion iframe {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  #formasContacto {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #formasContacto div {
+    margin-bottom: 15px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  #formularioText div {
+    width: 100%;
+  }
+
+  input,
+  #mensaje {
+    padding: 12px;
+  }
+
+  #boton button {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  #ubicacion iframe {
+    height: 350px;
+  }
 }
