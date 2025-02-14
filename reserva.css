@@ -113,12 +113,12 @@ button:hover {
     }
 
     .calendar-container {
-        order: 1;
+        order: 2;
         height: 400px;
     }
 
     .form-container {
-        order: 2;
+        order: 1;
     }
 
     .form-container input,
@@ -153,12 +153,12 @@ button:hover {
     }
 
     .calendar-container {
-        order: 1;
+        order: 2;
         height: 300px;
     }
 
     .form-container {
-        order: 2;
+        order: 1;
     }
 
     .form-container input,
